@@ -1,4 +1,3 @@
-console.log("✅ scripts.js is loaded");
 
 // Responsive nav toggle
 const menuBtn = document.getElementById('menuBtn');
