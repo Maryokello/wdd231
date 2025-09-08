@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>WDD231 Project | Mary Okello</title>
   <meta name="description" content="Personal home page for coursework: responsive navigation, semantic layout, and dynamic course listing." />
   <meta name="author" content="Mary Okello" />
+
+  <!-- Favicon (Rocket Emoji) -->
+  <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f680.png">
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +20,7 @@
 </head>
 
 <body>
+  <!-- Header -->
   <header class="site-header">
     <div class="brand">
       <!-- Logo -->
@@ -34,6 +38,7 @@
       <span></span><span></span><span></span>
     </button>
 
+    <!-- Navigation -->
     <nav id="site-nav" class="site-nav">
       <ul>
         <li><a href="#" class="active" aria-current="page">Home</a></li>
@@ -44,10 +49,11 @@
     </nav>
   </header>
 
+  <!-- Main -->
   <main class="container">
     <h1>WDD231 Project | Mary Okello</h1>
 
-
+    <!-- About -->
     <section class="panel">
       <h2>About</h2>
       <p>
@@ -55,6 +61,7 @@
       </p>
     </section>
 
+    <!-- Courses -->
     <section class="panel">
       <div class="panel-header">
         <h2>Certificate: Web & Computer Programming</h2>
@@ -68,6 +75,7 @@
       <div class="totals">Total Credits Displayed: <span id="creditTotal">0</span></div>
     </section>
 
+    <!-- Contact -->
     <section id="contact" class="panel">
       <h2>Contact</h2>
       <p>
@@ -76,21 +84,38 @@
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p class="social">
       <!-- GitHub -->
       <a href="https://github.com/" target="_blank" aria-label="GitHub">
-        <!-- SVG omitted for brevity -->
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.112.82-.262.82-.582 0-.288-.012-1.244-.018-2.256-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.334-1.757-1.334-1.757-1.09-.744.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.774.42-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.52 11.52 0 0 1 3-.405c1.02.004 2.045.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.804 5.628-5.475 5.922.43.37.814 1.103.814 2.222 0 1.606-.015 2.898-.015 3.293 0 .322.217.699.825.58C20.565 21.796 24 17.297 24 12c0-6.63-5.373-12-12-12z"/>
+        </svg>
       </a>
 
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
-        <!-- SVG omitted for brevity -->
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 
+          5 5h14c2.76 0 5-2.24 
+          5-5v-14c0-2.76-2.24-5-5-5zm-11 
+          19h-3v-10h3v10zm-1.5-11.29c-.96 
+          0-1.75-.79-1.75-1.75s.79-1.75 
+          1.75-1.75 1.75.79 1.75 
+          1.75-.79 1.75-1.75 1.75zm13.5 
+          11.29h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 
+          0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 
+          1.38-1.54 2.84-1.54 3.04 0 3.6 2 
+          3.6 4.6v5.6z"/>
+        </svg>
       </a>
 
       <!-- Email -->
       <a href="mailto:example@email.com" aria-label="Email">
-        <!-- SVG omitted for brevity -->
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 13.5l8-6v11h-16v-11l8 6zm0-2.5l-8-6h16l-8 6z"/>
+        </svg>
       </a>
     </p>
 
@@ -98,8 +123,9 @@
       <span id="copyright"></span> • Kenya
     </p>
     <p id="lastModified"></p>
-
-    <script src="scripts/scripts.js" defer></script>
   </footer>
+
+  <!-- Scripts -->
+  <script src="scripts/scripts.js" defer></script>
 </body>
 </html>
